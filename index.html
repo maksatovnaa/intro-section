@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body style="background-color: rgb(240, 240, 240)">
+
+<header class="flex justify-between p-8">
+
+
+  <div class="flex gap-15"> 
+  <img src="logo.svg">
+  <div class="flex gap-6 items-center">
+ 
+    <div class="relative">
+      <p id="featuresBtn" class=" flex items-center gap-1 hover:text-gray-700">
+        Features <span>⌵</span>
+      </p>
+      <div id="featuresMenu" class="absolute top-6 mt-2 hidden w-48 bg-white rounded-lg shadow-lg p-4 ">
+        <div class="flex items-center gap-3 mb-3">
+          <img src="icon-todo.svg"  class="w-4 h-4">
+          <p class="text-gray-600 text-sm">Todo List</p>
+        </div>
+        <div class="flex items-center gap-3 mb-3">
+          <img src="icon-calendar.svg" class="w-4 h-4">
+          <p class="text-gray-600 text-sm">Calendar</p>
+        </div>
+        <div class="flex items-center gap-3 mb-3">
+          <img src="icon-reminders.svg" class="w-4 h-4">
+          <p class="text-gray-600 text-sm">Reminders</p>
+        </div>
+        <div class="flex items-center gap-3">
+          <img src="icon-planning.svg" class="w-4 h-4">
+          <p class="text-gray-600 text-sm">Planning</p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="relative">
+      <p id="companyBtn" class=" flex items-center gap-1 hover:text-gray-700">
+        Company <span>⌵</span>
+      </p>
+      <div id="companyMenu" class="absolute top-6 left-0 mt-2 hidden w-40 bg-white rounded-lg shadow-lg p-4 z-10">
+        <p class="text-gray-600 text-sm mb-3">History</p>
+        <p class="text-gray-600 text-sm mb-3">Our Team</p>
+        <p class="text-gray-600 text-sm">Blog</p>
+      </div>
+    </div>
+  </div>
+
+
+  <p class=" flex items-center gap-1 hover:text-gray-700">About⌵</p>
+  </div>
+
+
+  <div class="flex gap-15">
+    <p>Login</p>
+    <button class="bg-white w-27 h-10 -mt-1" style="border-radius: 10px; border: 2px solid rgb(152, 152, 152);">Register</button>
+  </div>
+  
+</header>
+  
+  <div class="flex ">
+
+<div class="flex-col p-25 ml-20">
+<h1 class="text-7xl text-black font-bold  ">  Make <br>remote work</h1>
+
+<p class="text-gray-700 text-xl  mt-10">Get your team in sync, no matter your location.<br> Streamline processes, 
+  create team rituals, and<br> watch productivity soar.</p>
+
+  <button class="w-40 h-15 bg-black text-white  mt-10" style="border-radius: 15px; "> Learn more</button>
+
+<div class="flex gap-15 mt-25">
+  <img src="client-databiz.svg" width="80px">
+  <img src="client-audiophile.svg" width="70px">
+  <img src="client-meet.svg" width="70px">
+  <img src="client-maker.svg" width="70px">
+</div>
+
+</div>
+
+    <img src="image-hero-desktop.png" class="ml-20 " style="width: 500px;">
+
+  </div>
+
+
+<script src="script.js"></script>
+
+  
+
+</body>
+</html>
