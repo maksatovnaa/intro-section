@@ -1,77 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body style="background-color: rgb(240, 240, 240)">
+<body>
 
-<header class="flex justify-between p-8">
+  <img src="burger-bar.png" class="burger" id="burger">
 
+  <nav id="navbar">
+    <div class="left-nav">
+      <img src="logo.svg" class="logo" />
+      <div class="nav-links">
+        <div class="dropdown">
+          <p id="featuresBtn">Features ⌵</p>
+          <div class="dropdown-menu" id="featuresMenu">
+            <div><img src="icon-todo.svg" /><span>Todo List</span></div>
+            <div><img src="icon-calendar.svg" /><span>Calendar</span></div>
+            <div><img src="icon-reminders.svg" /><span>Reminders</span></div>
+            <div><img src="icon-planning.svg" /><span>Planning</span></div>
+          </div>
+        </div>
 
-  <div class="flex gap-15"> 
-  <img src="logo.svg">
-  <div class="flex gap-6 items-center">
- 
-    <div class="relative">
-      <p id="featuresBtn" class=" flex items-center gap-1 hover:text-gray-700">
-        Features <span>⌵</span>
-      </p>
+        <div class="dropdown">
+          <p id="companyBtn">Company ⌵</p>
+          <div class="dropdown-menu" id="companyMenu">
+            <p>History</p>
+            <p>Our Team</p>
+            <p>Blog</p>
+          </div>
+        </div>
+
+        <p>About</p>
+      </div>
     </div>
 
-
-    <div class="relative">
-      <p id="companyBtn" class=" flex items-center gap-1 hover:text-gray-700">
-        Company <span>⌵</span>
-      </p>
-
+    <div class="right-nav">
+      <p>Login</p>
+      <button>Register</button>
     </div>
+  </nav>
+
+  <div class="main">
+    <div class="text-section">
+      <h1>Make <br>remote work</h1>
+      <p>
+        Get your team in sync, no matter your location.<br>
+        Streamline processes, create team rituals, and<br>
+        watch productivity soar.
+      </p>
+      <button>Learn more</button>
+      <div class="clients">
+        <img src="client-databiz.svg" />
+        <img src="client-audiophile.svg" />
+        <img src="client-meet.svg" />
+        <img src="client-maker.svg" />
+      </div>
+    </div>
+    <img src="image-hero-desktop.png" class="hero-image" />
   </div>
 
-
-  <p class=" flex items-center gap-1 hover:text-gray-700">About⌵</p>
-  </div>
-
-
-  <div class="flex gap-15">
-    <p>Login</p>
-    <button class="bg-white w-27 h-10 -mt-1" style="border-radius: 10px; border: 2px solid rgb(152, 152, 152);">Register</button>
-  </div>
-  
-</header>
-  
-  <div class="flex ">
-
-<div class="flex-col p-25 ml-20">
-<h1 class="text-7xl text-black font-bold  ">  Make <br>remote work</h1>
-
-<p class="text-gray-700 text-xl  mt-10">Get your team in sync, no matter your location.<br> Streamline processes, 
-  create team rituals, and<br> watch productivity soar.</p>
-
-  <button class="w-40 h-15 bg-black text-white  mt-10" style="border-radius: 15px; "> Learn more</button>
-
-<div class="flex gap-15 mt-25">
-  <img src="client-databiz.svg" width="80px">
-  <img src="client-audiophile.svg" width="70px">
-  <img src="client-meet.svg" width="70px">
-  <img src="client-maker.svg" width="70px">
-</div>
-
-</div>
-
-    <img src="image-hero-desktop.png" class="ml-20 " style="width: 500px;">
-
-  </div>
-
-
-<script src="script.js"></script>
-
-  
-
+  <script src="script.js"></script>
 </body>
 </html>
